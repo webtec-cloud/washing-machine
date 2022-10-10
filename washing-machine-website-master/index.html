@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    
+    <script src="app.js"></script>
+    
+    <title>React App</title>
+  </head>
+  <body>
+  
+  <div id="root"></div>
+
+  
+   <title>Cart Project</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+    <!-- 
+
+     -->
+    <nav class="navbar navbar-expand-lg px-4">
+      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+   <!--   <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">store</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0"></p>
+          </div>
+          <!-- end of single info -->
+          <!-- single info -->
+       <!--   <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span class="item-total">10.49</span></p>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="border">
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize"><center><strong class="banner-title">washing machines</strong></center></h1>
+          
+          
+      <div class="row" class="store-items" id="store-items">
+      <!-- single item -->
+      <div class="col-18 col-sm-6 col-lg-4 mx-auot my-3 store item data-items="img">
+        
+          
+          
+
+         <div class="container">
+         <ul>
+         <li><img src="Product Grid.png"><a href="#cart" class="button">click here</a></li>
+         
+         <li><img src="Product Grid.png"><a href="#cart" class="button">click here</a></li>
+         
+         <li><img src="Product Grid.png"><a href="#cart" class="button">click here</a></li>
+         
+         <li><img src="Product Grid.png"><a href="#cart" class="button">click here</a></li>
+         
+         </ul>
+                         
+         
+         </div>
+         </div>
+         
+    
+    
+<script>
+
+$(document).ready(function() {
+   
+   $('#button').on('click')
+   $(this).css('width:500px'; 'height:300px'; <p>title:</p> <p>price:</p> <p>ProductId:</p>);
+   
+}); 
+
+function() {
+	const cartInfo = document.getElementById("cart-info");
+	const cart = document.getElementById("cart")
+	
+	
+	cartInfo.addEventListener("click", function() {
+    cart.classList.toggle("show-cart"); 
+												}); 
+
+
+ // add items into the cart 
+ 
+ 
+ (function() {
+		 const cartBtn = document.querySelectorAll(".store-item-icon"); 
+		 
+  cartBtn.forEach(function(btn) {
+	btn.addEventListener("click", function(event) {
+		// console.log(event.target); 
+		
+	if (event.target.parentElement.classlist("store-item-icon")) {
+	  {
+		  let fullPath = 
+		  event.target.parentElement.previousElementSibling.src; 
+		  let pos = fullPath.index()
+	
+	
+	
+	 
+	}
+  });
+});
+  
+})(); 
+
+
+</script>
+    
+         
+         
+
+
+
+        </div>
+        <div id="cart" class="cart">
+          <!-- cart item -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="/johnlewis.scene7.com/is/image/JohnLewis/236920214?" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>£</span>
+              <span id="cart-item-price" class="cart-item-price" class="mb-0"></span>
+            </div>
+            
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!--end of  cart item -->
+          <!-- cart item -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="cart-item-text">
+
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>$</span>
+              <span="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
+            </div>
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!--end of  cart item -->
+          <!-- cart total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5> $ <strong id="cart-total" class="font-weight-bold">10.00</strong> </h5>
+          </div>
+          <!--end cart total -->
+          <!-- cart buttons -->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+          </div>
+          <!--end of  cart buttons -->
+          <!--  -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+ 
+  <!-- modal-container -->
+  <div class="container-fluid ">
+    <div class="row lightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+        <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+        <div class="lightbox-item"></div>
+        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+      </div>
+
+    </div>
+  </div>
+
+
+  </body>
+</html>
